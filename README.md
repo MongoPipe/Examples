@@ -1,2 +1,2 @@
-# examples
-Library usage example projects
+# Examples
+Library usage examples.

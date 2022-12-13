@@ -1,0 +1,12 @@
+{
+  "_id": "matchingPizzasBySizePipeline",
+  "collection": "pizzas",
+  "description": "pizzas by size.",
+  "pipeline": [
+    {
+      "$match": {
+        "size": "${pizzaSize}"
+      }
+    }
+  ]
+}
