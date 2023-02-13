@@ -1,4 +1,4 @@
-package sample.model;
+package org.test.sample.model;
 
 import org.bson.codecs.pojo.annotations.BsonId;
 
