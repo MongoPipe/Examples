@@ -1,4 +1,4 @@
-package sample;
+package org.test.sample;
 
 import org.mongopipe.core.Pipelines;
 import org.mongopipe.core.Stores;
@@ -6,9 +6,9 @@ import org.mongopipe.core.config.MongoPipeConfig;
 import org.mongopipe.core.model.Pipeline;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sample.model.Order;
-import sample.model.Pizza;
-import sample.store.MyRestaurant;
+import org.test.sample.model.Order;
+import org.test.sample.model.Pizza;
+import org.test.sample.store.MyRestaurant;
 
 import java.util.Optional;
 
@@ -17,7 +17,7 @@ import static org.junit.Assert.assertEquals;
 public class MainClass {
   private static Logger LOG = LoggerFactory.getLogger(MainClass.class);
 
-  public static void main(String args[]) throws InterruptedException {
+  public static void main(String args[]) {
     // 0. Seed some data in MongoDB from command shell:
     //    \>"C:/Program Files/MongoDB/Server/4.4/bin/mongo" < seed_data.js
 

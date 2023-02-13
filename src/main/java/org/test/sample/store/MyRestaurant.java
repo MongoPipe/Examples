@@ -1,10 +1,10 @@
-package sample.store;
+package org.test.sample.store;
 
 import org.mongopipe.core.annotation.Item;
 import org.mongopipe.core.annotation.PipelineRun;
 import org.mongopipe.core.annotation.Store;
-import sample.model.Order;
-import sample.model.Pizza;
+import org.test.sample.model.Order;
+import org.test.sample.model.Pizza;
 
 import java.util.Optional;
 import java.util.stream.Stream;
@@ -17,7 +17,7 @@ import java.util.stream.Stream;
     }
 )
 public interface MyRestaurant {
-  @PipelineRun("matchingPizzasBySizePipeline")  // your pipeline id, copied from matchingPizzasBySize.bson, method can have any name.
+  @PipelineRun("matchingPizzas")  // your pipeline id, copied from matchingPizzasBySize.bson, method can have any name.
   Stream<Pizza> getPizzasBySize(String pizzaSize);
 
   Optional<Pizza> findById(String id); // For more CRUDs methods see org.mongopipe.core.store.CrudStore.
